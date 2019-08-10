@@ -422,7 +422,7 @@ Hooks::Hooks() noexcept
     *memory.dispatchSound = reinterpret_cast<uintptr_t>(&dispatchSound) - reinterpret_cast<uintptr_t>(memory.dispatchSound + 1);
     VirtualProtect(memory.dispatchSound, 4, oldProtection, NULL);
 
-    interfaces.gameUI->messageBox("Amazing, YeetHooks has been injected. Now in this high state, go and kill some fuckers.");
+    interfaces.gameUI->messageBox("Amazing!", "YeetHooks has been injected. Now in this high state, go and kill some fuckers.");
 }
 
 void Hooks::restore() noexcept
